@@ -36,10 +36,10 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 // undefined => false // Boolean() conversion will return false, TAC will be boolean // but TBC was undefined
 
 let myNumber = undefined
-console.log(typeof myNumber);
+// console.log(typeof myNumber);
 let myStringNumber = String(myNumber)
-console.log(myStringNumber);
-console.log(typeof myStringNumber);
+// console.log(myStringNumber);
+// console.log(typeof myStringNumber);
 
 // 1 => 1 // String() conversion will return 1, TAC will be string // but TBC was number
 // "1" => 1 // String() conversion will return 1, TAC will be string // and TBC was also string
@@ -49,3 +49,35 @@ console.log(typeof myStringNumber);
 // null => null // String() conversion will return null, TAC will be string // but TBC was object
 // NaN => NaN // String() conversion will return NaN, TAC will be string // but TBC was number
 // undefined => undefined // String() conversion will return undefined, TAC will be string //but TBC was undefined
+
+// *********************** Operations *************************
+let numValue = 3
+let negValue = -numValue
+// console.log(negValue)
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**3)
+// console.log(2%3)
+// console.log(2/3)
+
+let str1 = "Hi "
+let str2 = "Danish"
+// console.log(str1 + str2);
+
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("1" + 2 + 2)
+// console.log(1 + 2 + "2" + 2 + 3)
+// console.log(3 + 4 * 5 % 3);
+// console.log(3 + 4 % 5 * 3); // remember PEMDAS
+
+console.log(+true); // Output: 1 // + urnary operator will convert the operand to number just like Number(true)
+console.log(+""); // Output: 0 // + urnary operator will convert the operand to number just like Number("")
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+
+console.log(num1);
