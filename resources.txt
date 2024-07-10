@@ -1,0 +1,2 @@
+1) mdn JavaScript Documentation
+2) But orignal one is https://tc39.es/ecma262/
