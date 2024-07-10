@@ -5,10 +5,10 @@
 // code readability should be high
 // console.log(4 + 4) console.log("Danish")
 
-console.log(3 
-    + 3) 
+// console.log(3 
+//     + 3) 
 
-console.log("Danish")
+// console.log("Danish")
 
 let name = "Danish"
 let age = 36
@@ -30,3 +30,4 @@ let state
 
 console.log(typeof null); // object
 console.log(typeof undefined); // undefined
+console.log(typeof NaN); // number
