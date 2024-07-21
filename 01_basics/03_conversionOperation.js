@@ -1,9 +1,9 @@
 let myVariable = 0 // 22, "22", "22abc", null, undefined, NaN, true, false, 0, "danish"
 
-// => console.log(typeof myVariable);
-//console.log(typeof(myVariable)); 
+// console.log(typeof myVariable);
+// console.log(typeof(myVariable)); 
 
-// datatype have constructor or methods to do the data type conversion e.g Number() String()
+// datatype have constructor or methods to do the data type conversion e.g Number(), String(), Boolean(), etc.
 let valueInNumber = Number(myVariable) 
 
 // console.log(typeof valueInNumber);
@@ -15,7 +15,7 @@ let valueInNumber = Number(myVariable)
 // 22 => 22 // Number() conversion will return number 22, TAC will be number // and TBC was also number
 // "22" => 22 // Number() conversion will return number, TAC will be number // but TBC was string
 // "33abc" => NaN // Number() conversion will return NaN, TAC will be number // but TBC was string
-// null => 0 // Number() conversion will return 0, TAC will be number // but TBC was string
+// null => 0 // Number() conversion will return 0, TAC will be number // but TBC was object
 // undefined => NaN // Number() conversion will return NaN, TAC will be number // but TBC was undefined
 // NaN => NaN // Number() conversion will return NaN, TAC will be number // but TBC was number
 // true => 1 // Number() conversion will return 1, TAC will be number // but TBC was boolean
@@ -70,14 +70,19 @@ let str2 = "Danish"
 // console.log(1 + "2")
 // console.log("1" + 2 + 2)
 // console.log(1 + 2 + "2" + 2 + 3)
-// console.log(3 + 4 * 5 % 3);
-// console.log(3 + 4 % 5 * 3); // remember PEMDAS
+// console.log("=>", 3 + 4 * 5 % 3);
+// console.log("=>", 3 + 4 % 5 * 3); // remember PEMDAS
 
-console.log(+true); // Output: 1 // + urnary operator will convert the operand to number just like Number(true)
-console.log(+""); // Output: 0 // + urnary operator will convert the operand to number just like Number("")
+// console.log(+true); // Output: 1 // + urnary operator will convert the operand to number just like Number(true)
+// console.log(+""); // Output: 0 // + urnary operator will convert the operand to number just like Number("")
 
 let num1, num2, num3
 
 num1 = num2 = num3 = 2 + 2
 
-console.log(num1);
+// console.log(num1);
+// ++ in prefix it will increment before usage or assigning
+// and in postfix it will increment after the usage or assigning
+let gameCounter = 100
+gameCounter++
+console.log(gameCounter);
