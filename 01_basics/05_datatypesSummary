@@ -1,7 +1,8 @@
 // JavaScript is a dynamic typed language
 // There are two major data types depending upon how they called in a computer memory.
 
-// Primitive Data Types // only value provided and not the memory reference
+// 1. Primitive Data Types 
+// only value provided and not the memory reference
 // 7 Types: string, number, boolean, null, undefined, symbol, bigInt
 
 const score = 100 // number
@@ -20,7 +21,7 @@ const userId2 = Symbol("123")
 
 let bigNumber = 146654646546546468468n
 
-// Non Primitive or Reference Data Types
+// 2. Non Primitive or Reference Data Types
 // array, objects, functions
 
 const cars = ["Toyota Aqua", "Nissan Dayz", "Honda City"]
