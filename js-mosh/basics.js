@@ -42,6 +42,7 @@ function greet(firstName, lastName){
     console.log('Hi, ' + firstName + ' ' + lastName);
 }
 // but at the time of calling a function we called these arguments
+// we can pass a simple string or number or even expression e.g x+y or call to another function
 //greet('Danish', 'Abdullah');
 
 // Calculating a value
@@ -49,3 +50,4 @@ function square(number){
     return number * number;
 }
 //console.log(square(3);
+

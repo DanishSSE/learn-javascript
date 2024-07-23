@@ -10,8 +10,8 @@ y = 3;
 // console.log(x ** y); // ES2016
 
 // Increment (++)
-// console.log(++x); // pre increment
-// console.log(x++); // post increment
+// console.log(++x); // pre increment // prefix
+// console.log(x++); // post increment // postfix
 // console.log(x);
 
 // Decrement (--)
@@ -21,7 +21,7 @@ y = 3;
 
 // 2. Assignment Operator
 // console.log(x = 20);
-// console.log(x += y); // 13
+// console.log(x += y); // 13 // addition assignment
 // console.log(x -= y); // 10
 // console.log(x *= y); // 30
 // console.log(x /= y); // 10
@@ -40,11 +40,14 @@ y = 3;
 // console.log(x !== y);
 
 // 3.2.1 Strict Equality (Value + Type)
-// console.log(1 === 1); // strict equality operator that compares value and type
-// console.log('1' === 1);
+// console.log(1 === 1); // true // strict equality operator that compares value and type
+// console.log('1' === 1); // false
 
 // 3.2.2 Loose Equality (Value)
-// console.log(x == y); // loose equality operator that compares value only
+// console.log(1 == 1); // true // loose equality operator that compares value only
+// console.log('1' == 1); // true // or converts right side of the value according to the left value
+// console.log(true == 1); // true
+
 // console.log(x != y);
 
 // 4. Ternary Operator
@@ -72,12 +75,13 @@ let applicationRefused = !eligibleForLoan;
 // console.log(`Application Refused ${applicationRefused}`);
 
 // Unlike other programming languages in JavaScript
-// we can use non-boolean values in Logical operators as well
+// we can use non-boolean values in Logical operators as well for OR || operator
 // In this case it will return the first truthy value or the last falsy value
 
-// Falsy (false)
+// Falsy (kind of like false but not boolean false)
 // undefined, null, 0, false, '', NaN
-// Anything that is not falsy is truthy
+
+// Anything that is not falsy is => truthy
 // Truthy (true)
 
 // false || true // true
@@ -91,32 +95,32 @@ let selectedColor = userColor || defaultColor;
 // console.log(selectedColor);
 
 // 6. Bitwise Operator
-// 1 = 00000001
+// 1 = 00000001 // 8 bits that represent 1 byte of information in a computer
 // 2 = 00000010
-// R = 00000001 = 3 for bitwise OR |
-// R = 00000000 = 0 for bitwise AND &
+
+// console.log(1 | 2) // R = 00000011 = 3 for bitwise OR | // we can add permissions
+// console.log(1 & 2) // R = 00000000 = 0 for bitwise AND & // we can check permissions
+
 // Practicle usage is for permissions
+// Real world use case of Bitwize operator
 // Read, Write, Execute
 // 00000100
 // 00000110
 // 00000111
-//console.log(1 | 2);
-//console.log(1 & 2);
 
-// Real world use case of Bitwize operator
-const readPermission = 4;
-const writePermission = 2;
-const executePermission = 1;
+const readPermission = 4; // 00000100
+const writePermission = 2; // 00000010
+const executePermission = 1; // 00000001
 
 let myPermission = 0;
 myPermission = myPermission | readPermission | writePermission;
 
 // lets check if we a permission or not
-let checkPermission = (myPermission & readPermission) ? 'yes' : 'no';
-//console.log('Read Permission: ',checkPermission);
+let message = (myPermission & readPermission) ? 'yes' : 'no';
+//console.log('Read Permission:', message);
 
-checkPermission = (myPermission & executePermission) ? 'yes' : 'no';
-//console.log('Execute Permission: ',checkPermission);
+message = (myPermission & executePermission) ? 'yes' : 'no';
+//console.log('Execute Permission:', message);
 
 // precedence of operators
 // () - Parentheses

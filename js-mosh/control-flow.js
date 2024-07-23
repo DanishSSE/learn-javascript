@@ -1,3 +1,4 @@
+document.querySelector('h1').innerHTML = "Control Flows"
 // if...else
 // Hour
 // If hour is between 6am and 12pm: Good morning!
@@ -31,27 +32,27 @@ let role = 'guest';
 // else console.log('Unknown User');
 
 // for loop
-// for(let i = 0; i <= 5; i++) {
-//     console.log('Assalam-O-Alaikum', i);
-// }
+// for(let i = 0; i <= 5; i++) 
+//     if(i % 2 !== 0)
+//         console.log('Assalam-O-Alaikum', i);
+
 // reverse order
-// for(let i = 5; i > 0; i--) {
+// for(let i = 5; i > 0; i--) 
 //     console.log('Assalam-O-Alaikum', i);
-// }
 
 // while loop // it executes 0 or more times
 // let i=0;
 // while(i<=5){
-//     if(i%2 !== 0) console.log(i);
+//     if(i % 2 !== 0) console.log(i);
 //     i++;
 // }
 
 // do-while // it executes at-least one time or more
-// let i=13;
+// let i = 13;
 // do {
-//     if(i%2 !== 0) console.log(i);
+//     if(i % 2 !== 0) console.log(i);
 //     i++;
-// } while(i<=5)
+// } while(i <= 5)
 
 // infinite loops with for, while and do-while // these loops can crash browser or computer
 // while(true){
@@ -74,33 +75,30 @@ let role = 'guest';
 //     name: "Danish Abdullah",
 //     age: 34,
 // }
-// for (let key in person){
+// for (let key in person)
 //     console.log(key, person[key])
-// }
 
 // we can also use this to iterate an array but its not an ideal way
 // const colorsArr = ['red', 'blue', 'green'];
-// for (let index in colorsArr){
+// for (let index in colorsArr)
 //     console.log(index, colorsArr[index]);
-// }
 
-// for-of new way to iterate over array
+// for-of new way to iterate over array or modern way ES6 syntax
 // const colorsArr = ['red', 'blue', 'green'];
-// for (let color of colorsArr){
+// for (let color of colorsArr)
 //     console.log(color);
-// }
 
 // break...continue
-let i=0;
-while(i<=10){
-    // if(i===5) break;
+// let i=0;
+// while(i<=10){
+//     // if(i===5) break;
 
-    if(i%2 === 0){
-        i++;
-        continue; 
-        // it will skip the code below and jump to the start of the loop
-        // its an old and ugly way of doing or coding
-    }
-    console.log(i);
-    i++;
-}
+//     if(i%2 === 0){
+//         i++;
+//         continue; 
+//         // it will skip the code below and jump to the start of the loop
+//         // its an old and ugly way of doing or coding
+//     }
+//     console.log(i);
+//     i++;
+// }
